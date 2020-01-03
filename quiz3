@@ -1,17 +1,13 @@
 class Cat
   attr_accessor :breed, :color
-  def initialize
+  def initialize(breed, color)
       @breed = breed
       @color = color
-  end
-  
-  def breed=(breed)
-      @breed = breed
   end
 end
 
 cat = Cat.new(:DMH, :orange)
-cat.breed = :DMH
+cat.breed = :DSH
 puts cat
 puts cat.breed
 puts cat.color
